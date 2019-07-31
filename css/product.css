@@ -1,0 +1,151 @@
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 6px;
+    line-height: 1.2em;
+}
+
+br {
+    line-height: 8px;
+    margin: 0px;
+}
+
+.menu p {
+    background: #fff;
+    color: #333;
+    font-size: 24px;
+    padding-left: 6px;
+}
+
+h1,
+h2,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font-size: 0.625em/1.5em;
+    background: rgb(248, 251, 255);
+    padding: 0;
+}
+
+a {
+    color: #1c769a;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    width: 311px;
+    padding: 10px;
+    /* border-right: solid 1px #dfdfdf; */
+    background: rgb(248, 251, 255);
+    font-size: 11px;
+    margin: 0;
+    overflow: hidden;
+    left: 0;
+    float: left;
+}
+
+.menu ul li {
+    display: block;
+    width: 311px;
+    padding-top: 2px;
+    margin-bottom: 5px;
+    background: url(../images/zakladka.png) top left no-repeat;
+    overflow: visible;
+}
+
+.menu ul li a {
+    display: block;
+    height: 34px;
+    width: 273px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 35px;
+    font-size: 14px;
+    color: #82846f;
+    outline: none;
+}
+
+.menu ul li .active {
+    background: url(../images/on.png) top right no-repeat;
+}
+
+.menu ul li .inactive {
+    background: url(../images/off.png) top right no-repeat;
+}
+
+.menu ul li ul {
+    display: none;
+    margin-top: -4px;
+    margin-bottom: 20px;
+}
+
+.menu ul li ul li ul {
+    margin-bottom: 5px;
+}
+
+.menu ul li ul li {
+    display: block;
+    background: none;
+    font-size: 12px;
+    list-style: circle;
+    color: #8f9d4c;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1px;
+    margin-left: 35px;
+}
+
+.menu ul li ul li a {
+    background: none;
+    font-size: 12px;
+    height: 15px;
+    color: #8f9d4c;
+    padding-left: 0px;
+}
+
+section.content h1 {
+    color: #607d8b;
+    font-size: 24px;
+    font-family: "Helvetica Neue","Helvetica","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","WenQuanYi Micro Hei","Arial",sans-serif;
+    padding: 6px;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+
+section.content div.main_content h1 {
+    color: #607d8b;
+    font-size: 24px;
+    font-family: "Helvetica Neue","Helvetica","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","WenQuanYi Micro Hei","Arial",sans-serif;
+    padding: 6px;
+    margin-top: 20px;
+    margin-left: 350px;
+    border-bottom: 5px solid;
+}
+
+#goTop{
+    display:none;
+    width:55px;
+    height:55px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(../images/hui-55.png) no-repeat;
+    border: 1px solid #eaeaea;    
+}
+

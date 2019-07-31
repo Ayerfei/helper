@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/menu_min.js"></script>
+    <script type="text/javascript" src="js/result.js"></script>
+    <script src="http://mockjs.com/dist/mock.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/help.css">
+    
+    <script type="text/javascript">
+        function Go(id) {
+            $content = $("div#" + id);
+            $content.show()
+            .siblings().hide();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header_main_section">
+        <header>
+            <nav>
+                <div class="nav_container">
+                    <div class="nav_left">
+                        <img class="sim_icon" src="images/eolinker_sim.png" alt="eoLinker-专业api接口管理平台"
+                            title="eoLinker-专业api接口管理平台">
+                        <span>|</span>
+                        <a class="nav1" href="../eolinker_help.html">帮助中心</a>
+                    </div>
+                    <div class="nav_right">
+                        <a class="nav1" href="https://www.eolinker.com/#/">前往官网</a>
+                        <a class="nav1" href="https://www.eolinker.com/#/login">登录</a>
+                        <a id="register" href="https://www.eolinker.com/#/register/">免费注册</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section class="sousuo_section">
+        <form name="searchForm" class="searchForm" action="search" method="post">
+            <div class="search_flex_box">
+                <div class="search_form_box">
+                    <select class="select_type">
+                        <option value="搜全站" selected>搜全站</option>
+                        <option value="API Studio">API Studio</option>
+                        <option value="API Gateway-EE">API Gateway-EE</option>
+                        <option value="API Gateway-CE">API Gateway-CE</option>
+                        <option value="API Beacon">API Beacon</option>
+                        <option value="Database Builder">Database Builder</option>
+                        <option value="Workspace">Workspace</option>
+                        <option value="Account">Account</option>
+                    </select>
+                    <input class="iconfont iconfont_suosou searchInput" id="sousuo" type="text" name="search"
+                        required="" value="" placeholder="请输入搜索关键词或问题">
+                </div>
+                <button type="submit" class="btn_suosou" id="btn_submit">
+                    <label class="iconfont iconfont_suosou"> </label>
+                    <span class="text_search">搜索</span>
+                </button>
+            </div>
+        </form>
+    </section>
+    <section class="result_section">
+        <div class="menu left_nav" style="border-width: 0; border-right: 1px solid #eaeaea;">
+            <!-- 按照顺序排列li -->
+            <ul>
+                <li><a class="quanbu" onclick="Go('quanbu')">全部</a></li>
+                <li><a class="13" onclick="Go('13')">API Studio</a></li>
+                <li><a class="14" onclick="Go('14')">API Gateway-EE</a></li>
+                <li><a class="19" onclick="Go('19')">API Gateway-CE</a></li>
+                <li><a class="15" onclick="Go('15')">API Beacon</a></li>
+                <li><a class="17" onclick="Go('17')">Account</a></li>
+                <li><a class="16" onclick="Go('16')">Database Builder</a></li>
+                <li><a class="18" onclick="Go('18')">Workspace</a></li>
+            </ul>
+        </div>
+        <div id="result_content">
+            <div id="quanbu"></div>
+            <div id="13"></div>
+            <div id="14"></div>
+            <div id="15"></div>
+            <div id="16"></div>
+            <div id="17"></div>
+            <div id="18"></div>
+            <div id="19"></div>
+        </div>
+
+    </section>
+</body>
+
+</html>

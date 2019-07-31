@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1,maximum-scale=1.0,user-scalable=0">
+    <meta name="author" content="广州银云信息科技有限公司">
+    <title>教程-EOLINKER 帮助中心 | 全球领先API管理平台，Google谷歌开发者联盟合作项目企业</title>
+    <link href="https://help.eolinker.com/assets/images/favicon.ico" rel="shortcut icon">
+    
+    <!-- <base href="/"> -->
+    <!-- Browser-360 speed mode is enabled (webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- Use IE and Chrome latest version -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../css/help.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/menu_min.js"></script>
+    <script src="http://mockjs.com/dist/mock.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular-route.min.js"></script>
+    
+</head>
+<body ng-app='studioApp'>
+    <header>
+        <nav>
+            <div class="nav_container" style="background: rgb(252, 253, 255);">
+                <div class="nav_left">
+                    <img class="sim_icon" src="../images/eolinker_sim.png" alt="eoLinker-专业api接口管理平台" title="eoLinker-专业api接口管理平台">
+                    <span>|</span>
+                    <a class="nav1" href="../eolinker_help.html">帮助中心</a>
+                </div>
+                <div class="nav_right">
+                    <form name="searchForm" class="searchForm" action="../search_result.html" method="POST">
+                        <button type="submit" class="btn_box">
+                            <label class="iconfont iconfont_suosou">  </label>
+                        </button>
+                        <input class="searchInput" type="text" name="search" required="" id="sousuo"
+                                placeholder="请输入搜索关键词或问题">
+                    </form>
+                    <a class="nav1" href="https://www.eolinker.com/#/">前往官网</a>
+                    <a class="nav1" href="https://www.eolinker.com/#/login">登录</a>
+                    <a id="register" href="https://www.eolinker.com/#/register/">免费注册</a>
+                </div>
+            </div>
+        </nav>
+    </header>  
+    <nav class="menu">
+        <!-- 改善：使用angular路由功能 -->
+        <!-- 每个内容给一个groudID -->
+        <ul>
+            <li>
+                <a class="current main_content" href="#!/productID=13">API Studio</a>
+            </li>
+            <li>
+                <a class="API_Studio_简介" href="#!/groupID=c-67&productID=13" onclick="Go('c-67');">API Studio 简介</a>
+            </li>
+            <li>
+                <a href="#!/groupID=c-68&productID=13">API Studio 各版本功能对比</a>
+            </li>
+            <li>
+                <a class="active" href="#!/groupID=c-101&productID=13">研发管理</a>
+                <ul style="display: block;">
+                    <li>
+                        <a href="#!/groupID=c-101&productID=13">API 项目管理</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-101&productID=13">新建/导入项目</a></li>
+                            <li><a href="#!/groupID=c-102&productID=13">在线分享项目</a></li>
+                            <li><a href="#!/groupID=c-231&productID=13">离线导出项目文档</a></li>
+                            <li><a href="#!/groupID=c-103&productID=13">管理项目</a></li>
+                            <li><a href="#!/groupID=c-104&productID=13">管理文件夹（项目组）</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-98&productID=13">管理项目权限</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-98&productID=13">设置项目管理员</a></li>
+                            <li><a href="#!/groupID=c-99&productID=13">创建自定义权限角色</a></li>
+                            <li><a href="#!/groupID=c-100&productID=13">为普通成员分配角色</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-91&productID=13">API 文档管理</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-91&productID=13">手动创建API文档</a></li>
+                            <li><a href="#!/groupID=c-233&productID=13">自动读取代码注解生成API文档</a></li>
+                            <li><a href="#!/groupID=c-234&productID=13">离线导出API数据（*.amsa）</a></li>
+                            <li><a href="#!/groupID=c-92&productID=13">导入API文档（*.amsa）</a></li>
+                            <li><a href="#!/groupID=c-93&productID=13">为API文档设置星标</a></li>
+                            <li><a href="#!/groupID=c-94&productID=13">API编辑历史/版本管理</a></li>
+                            <li><a href="#!/groupID=c-95&productID=13">复制API文档</a></li>
+                            <li><a href="#!/groupID=c-96&productID=13">管理API文档</a></li>
+                            <li><a href="#!/groupID=c-97&productID=13">找回误删的API文档</a></li>
+                            <li><a href="#!/groupID=c-90&productID=13">自定义API列表项</a></li>
+                            <li><a href="#!/groupID=c-232&productID=13">增大API信息显示区域</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-83&productID=13">API 测试</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-83&productID=13">了解API测试</a></li>
+                            <li><a href="#!/groupID=c-235&productID=13">安装浏览器测试插件</a></li>
+                            <li><a href="#!/groupID=c-236&productID=13">切换API的测试方式</a></li>
+                            <li><a href="#!/groupID=c-84&productID=13">发起基础API测试</a></li>
+                            <li><a href="#!/groupID=c-85&productID=13">参数构造器</a></li>
+                            <li><a href="#!/groupID=c-86&productID=13">请求/响应预处理</a></li>
+                            <li><a href="#!/groupID=c-237&productID=13">查看测试结果</a></li>
+                            <li><a href="#!/groupID=c-87&productID=13">查询测试历史</a></li>
+                            <li><a href="#!/groupID=c-88&productID=13">创建API测试用例</a></li>
+                            <li><a href="#!/groupID=c-89&productID=13">执行API测试用例</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-79&productID=13">公共资源管理</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-79&productID=13">什么是公共资源？</a></li>
+                            <li><a href="#!/groupID=c-80&productID=13">项目环境管理</a></li>
+                            <li><a href="#!/groupID=c-81&productID=13">数据结构管理</a></li>
+                            <li><a href="#!/groupID=c-82&productID=13">通用函数管理</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!/groupID=c-76&productID=13">Mock API</a></li>
+                    <li><a href="#!/groupID=c-77&productID=13">API状态码管理</a></li>
+                    <li><a href="#!/groupID=c-78&productID=13">项目文档管理</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#!/groupID=c-150&productID=13">自动化测试</a>
+                <ul style="display: block;">
+                    <li>
+                        <a href="#!/groupID=c-150&productID=13">项目管理</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-150&productID=13">新建项目</a></li>
+                            <li><a href="#!/groupID=c-152&productID=13">管理项目</a></li>
+                            <li><a href="#!/groupID=c-155&productID=13">管理文件夹（项目组）</a></li>
+                            <li><a href="#!/groupID=c-238&productID=13">限制可引用的API信息</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-156&productID=13">场景用例</a>
+                        <ul style="display: block;">
+                            <li>
+                                <a href="#!/groupID=c-156&productID=13">UI模式测试用例</a>
+                                <ul style="display: block;">
+                                    <li><a href="#!/groupID=c-156&productID=13">新建测试用例</a></li>
+                                    <li><a href="#!/groupID=c-157&productID=13">了解返回内容的校验规则</a></li>
+                                    <li><a href="#!/groupID=c-239&productID=13">在自动化测试中使用参数构造器</a></li>
+                                    <li><a href="#!/groupID=c-158&productID=13">执行UI测试用例并获取测试报告</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!/groupID=c-193&productID=13">代码模式测试用例</a>
+                                <ul style="display: block;">
+                                    <li><a href="#!/groupID=c-193&productID=13">新建测试用例</a></li>
+                                    <li><a href="#!/groupID=c-194&productID=13">执行Code测试用例并获取测试报告</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#!/groupID=c-198&productID=13">前置用例/后置用例</a></li>
+                            <li><a href="#!/groupID=c-200&productID=13">批量测试所有用例</a></li>
+                            <li><a href="#!/groupID=c-202&productID=13">下载批量测试报告</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-205&productID=13">设置定时测试任务</a>
+                    </li>
+                    <li>
+                        <a href="#!/groupID=c-240&productID=13">公共资源管理</a>
+                        <ul style="display: block;">
+                            <li><a href="#!/groupID=c-240&productID=13">什么是公共资源？</a></li>
+                            <li><a href="#!/groupID=c-241&productID=13">项目环境管理</a></li>
+                            <li><a href="#!/groupID=c-242&productID=13">通用函数管理</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+    <section class="content" ng-view>
+        <!-- 点击时js获取id -->
+        <div id="main_content">
+            <h1>热门教程</h1>
+        </div>
+        
+        <div id="c-67">
+            <h1>API Studio 简介</h1>
+        </div>
+
+        <div id="c-68">
+            <h1>API Studio 各版本功能对比</h1>
+        </div>
+        <div id="研发管理_API_项目管理">
+            <div id="c-101">
+                <h1>新建/导入项目</h1>
+            </div>
+
+            <div id="c-102">
+                <h1>在线分享项目</h1>
+            </div>
+
+            <div id="c-231">
+                <h1>离线导出项目</h1>
+            </div>
+
+            <div id="c-103">
+                <h1>管理项目</h1>
+            </div>
+
+            <div id="c-104">
+                <h1>管理文件夹（项目组）</h1>
+            </div>
+        </div>
+        <div id="研发管理_管理项目权限">
+            <div id="c-98">
+                <h1>设置项目管理员</h1>
+            </div>
+
+            <div id="c-99">
+                <h1>创建自定义权限角色</h1>
+            </div>
+
+            <div id="c-100">
+                <h1>为普通成员分配角色</h1>
+            </div>
+        </div>
+        <div id="研发管理_API_文档管理">
+            <div id="c-91">
+                <h1>手动创建API文档</h1>
+            </div>
+
+            <div id="c-233">
+                <h1>自动读取代码注解生成API文档</h1>
+            </div>
+
+            <div id="c-234">
+                <h1>离线导出API数据（*.amsa）</h1>
+            </div>
+
+            <div id="c-92">
+                <h1>导入API文档（*.amsa）</h1>
+            </div>
+
+            <div id="c-93">
+                <h1>为API文档设置星标</h1>
+            </div>
+            <div id="c-94">
+                <h1>API编辑历史/版本管理</h1>
+            </div>
+
+            <div id="c-95">
+                <h1>复制API文档</h1>
+            </div>
+
+            <div id="c-96">
+                <h1>管理API文档</h1>
+            </div>
+
+            <div id="c-97">
+                <h1>找回误删的API文档</h1>
+            </div>
+
+            <div id="c-90">
+                <h1>自定义API列表项</h1>
+            </div>
+
+            <div id="c-232">
+                <h1>增大API信息显示区域</h1>
+            </div>
+        </div>
+        <div id="研发管理_API_测试">
+            <div id="c-83">
+                <h1>了解API测试</h1>
+            </div>
+
+            <div id="c-235">
+                <h1>安装浏览器测试插件</h1>
+            </div>
+
+            <div id="c-236">
+                <h1>切换API的测试方式</h1>
+            </div>
+
+            <div id="c-84">
+                <h1>发起基础API测试</h1>
+            </div>
+
+            <div id="c-85">
+                <h1>参数构造器</h1>
+            </div>
+            <div id="c-86">
+                <h1>请求/响应预处理</h1>
+            </div>
+
+            <div id="c-237">
+                <h1>查看测试结果</h1>
+            </div>
+
+            <div id="c-87">
+                <h1>查询测试历史</h1>
+            </div>
+
+            <div id="c-88">
+                <h1>创建API测试用例</h1>
+            </div>
+
+            <div id="c-89">
+                <h1>执行API测试用例</h1>
+            </div>
+        </div>
+        <div id="研发管理_公共资源管理">
+            <div id="c-79">
+                <h1>什么是公共资源？</h1>
+            </div>
+
+            <div id="c-80">
+                <h1>项目环境管理</h1>
+            </div>
+
+            <div id="c-81">
+                <h1>数据结构管理</h1>
+            </div>
+
+            <div id="c-82">
+               <h1>通用函数管理</h1>
+            </div>
+        </div>
+        <div id="c-76">
+            <h1>Mock API</h1>
+        </div>
+
+        <div id="c-77">
+            <h1>API 状态码管理</h1>
+        </div>
+
+        <div id="c-78">
+            <h1>项目文档管理</h1>
+        </div>
+
+        <div id="自动化测试_项目管理">
+            <div id="c-150">
+                <h1>新建项目</h1>
+            </div>
+
+            <div id="c-152">
+                <h1>管理项目</h1>
+            </div>
+
+            <div id="c-155">
+                <h1>管理文件夹（项目组）</h1>
+            </div>
+
+            <div id="c-238">
+                <h1>限制可引用的API信息</h1>
+            </div>
+        </div>
+
+        <div id="自动化测试_场景用例">
+            <div id="UI模式测试用例">
+                <div id="c-156">
+                    <h1>新建测试用例</h1>
+                </div>
+    
+                <div id="c-157">
+                    <h1>了解返回内容的校验规则</h1>
+                </div>
+    
+                <div id="c-239">
+                    <h1>在自动化测试中使用参数构造器</h1>
+                </div>
+    
+                <div id="c-158">
+                    <h1>执行UI测试用例并获取测试报告</h1>
+                </div>
+            </div>
+
+            <div id="代码模式测试用例">
+                <div id="c-193">
+                    <h1>新建测试用例</h1>
+                </div>
+    
+                <div id="c-194">
+                    <h1>执行Code测试用例并获取测试报告</h1>
+                </div>
+            </div>
+
+            <div id="c-198">
+                <h1>前置用例/后置用例</h1>
+            </div>
+
+            <div id="c-200">
+                <h1>批量测试所有用例</h1>
+            </div>
+
+            <div id="c-202">
+                <h1>下载批量测试报告</h1>
+            </div>
+        </div>
+
+        <div id="c-205">
+            <h1>设置定时测试任务</h1>
+        </div>
+
+        <div id="自动化测试_公共资源管理">
+            <div id="c-240">
+                <h1>什么是公共资源？</h1>
+            </div>
+
+            <div id="c-241">
+                <h1>项目环境管理</h1>
+            </div>
+
+            <div id="c-242">
+                <h1>通用函数管理</h1>
+            </div>
+        </div>
+        
+    </section>
+    <script>
+        angular.module('studioApp',['ngRoute'])
+    .config(['$routeProvider', function($routeProvider){
+        $routeProvider
+        .when('/productID=13',{template:'<div id="main_content"><h1>热门教程</h1></div>'})
+        .when('/groupID=c-67&productID=13',{template: $("div[id='c-67']").html()})
+        .when('/groupID=c-68&productID=13',{template: $("div[id='c-68']").html()})
+        .when('/groupID=c-101&productID=13',{template: $("div[id='c-101']").html()})
+        .when('/groupID=c-102&productID=13',{template: $("div[id='c-102']").html()})
+        .when('/groupID=c-231&productID=13',{template: $("div[id='c-231']").html()})
+        .when('/groupID=c-103&productID=13',{template: $("div[id='c-103']").html()})
+        .when('/groupID=c-104&productID=13',{template: $("div[id='c-104']").html()})
+        .when('/groupID=c-98&productID=13',{template: $("div[id='c-98']").html()})
+        .when('/groupID=c-99&productID=13',{template: $("div[id='c-99']").html()})
+        .when('/groupID=c-100&productID=13',{template: $("div[id='c-100']").html()})
+        .when('/groupID=c-91&productID=13',{template: $("div[id='c-91']").html()})
+        .when('/groupID=c-233&productID=13',{template: $("div[id='c-233']").html()})
+        .when('/groupID=c-234&productID=13',{template: $("div[id='c-234']").html()})
+        .when('/groupID=c-92&productID=13',{template: $("div[id='c-92']").html()})
+        .when('/groupID=c-93&productID=13',{template: $("div[id='c-93']").html()})
+        .when('/groupID=c-94&productID=13',{template: $("div[id='c-94']").html()})
+        .when('/groupID=c-95&productID=13',{template: $("div[id='c-95']").html()})
+        .when('/groupID=c-96&productID=13',{template: $("div[id='c-96']").html()})
+        .when('/groupID=c-97&productID=13',{template: $("div[id='c-97']").html()})
+        .when('/groupID=c-90&productID=13',{template: $("div[id='c-90']").html()})
+        .when('/groupID=c-232&productID=13',{template: $("div[id='c-232']").html()})
+        .when('/groupID=c-83&productID=13',{template: $("div[id='c-83']").html()})
+        .when('/groupID=c-235&productID=13',{template: $("div[id='c-235']").html()})
+        .when('/groupID=c-236&productID=13',{template: $("div[id='c-236']").html()})
+        .when('/groupID=c-84&productID=13',{template: $("div[id='c-84']").html()})
+        .when('/groupID=c-85&productID=13',{template: $("div[id='c-85']").html()})
+        .when('/groupID=c-86&productID=13',{template: $("div[id='c-86']").html()})
+        .when('/groupID=c-237&productID=13',{template: $("div[id='c-237']").html()})
+        .when('/groupID=c-87&productID=13',{template: $("div[id='c-87']").html()})
+        .when('/groupID=c-88&productID=13',{template: $("div[id='c-88']").html()})
+        .when('/groupID=c-89&productID=13',{template: $("div[id='c-89']").html()})
+        .when('/groupID=c-79&productID=13',{template: $("div[id='c-79']").html()})
+        .when('/groupID=c-80&productID=13',{template: $("div[id='c-80']").html()})
+        .when('/groupID=c-81&productID=13',{template: $("div[id='c-81']").html()})
+        .when('/groupID=c-82&productID=13',{template: $("div[id='c-82']").html()})
+        .when('/groupID=c-76&productID=13',{template: $("div[id='c-76']").html()})
+        .when('/groupID=c-77&productID=13',{template: $("div[id='c-77']").html()})
+        .when('/groupID=c-78&productID=13',{template: $("div[id='c-78']").html()})
+        .when('/groupID=c-150&productID=13',{template: $("div[id='c-150']").html()})
+        .when('/groupID=c-152&productID=13',{template: $("div[id='c-152']").html()})
+        .when('/groupID=c-155&productID=13',{template: $("div[id='c-155']").html()})
+        .when('/groupID=c-238&productID=13',{template: $("div[id='c-238']").html()})
+        .when('/groupID=c-156&productID=13',{template: $("div[id='c-156']").html()})
+        .when('/groupID=c-157&productID=13',{template: $("div[id='c-157']").html()})
+        .when('/groupID=c-239&productID=13',{template: $("div[id='c-239']").html()})
+        .when('/groupID=c-158&productID=13',{template: $("div[id='c-158']").html()})
+        .when('/groupID=c-193&productID=13',{template: $("div[id='c-193']").html()})
+        .when('/groupID=c-194&productID=13',{template: $("div[id='c-194']").html()})
+        .when('/groupID=c-198&productID=13',{template: $("div[id='c-198']").html()})
+        .when('/groupID=c-200&productID=13',{template: $("div[id='c-200']").html()})
+        .when('/groupID=c-202&productID=13',{template: $("div[id='c-202']").html()})
+        .when('/groupID=c-205&productID=13',{template: $("div[id='c-205']").html()})
+        .when('/groupID=c-240&productID=13',{template: $("div[id='c-240']").html()})
+        .when('/groupID=c-241&productID=13',{template: $("div[id='c-241']").html()})
+        .when('/groupID=c-242&productID=13',{template: $("div[id='c-242']").html()})
+        .otherwise({redirectTo:'/productID=13'});
+    }]);
+    </script>
+</body>
+
+</html>
