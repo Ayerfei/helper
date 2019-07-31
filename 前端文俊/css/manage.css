@@ -1,0 +1,400 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+button,select,input
+{
+    outline: none;
+    border: none;
+}
+
+
+*
+{
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",
+    Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol"
+}
+
+
+body > .wrapper
+{
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    overflow: hidden;
+}
+
+
+.wrapper .top-nav
+{
+    background-color: #343a40!important;
+    height: 50px;
+    width: 100%;
+    padding: 8px 16px 8px 0;
+    position: relative;
+}
+
+.wrapper .left-wrapper
+{
+    background-color: #343a40!important;
+    float: left;
+    height: 100%;
+    width: 250px;
+}
+
+.wrapper .top-nav,
+.wrapper .left-wrapper
+{
+    color: #fff;
+    position: relative;
+}
+
+.wrapper .top-nav .name-box
+{
+    float: left;
+    width: 250px;
+
+}
+
+.wrapper .top-nav .name-box h1
+{
+    line-height: 34px;
+    height: 34px;
+    padding-left: 20px;
+}
+
+.wrapper .top-nav .login-out
+{
+    background-color: rgb(0, 142, 142);
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 2px 8px;
+    text-align: center;
+    font-family: inherit;
+    border-radius: 14px;
+    box-sizing: content-box;
+}
+
+.left-wrapper ul li
+{
+    color: #868e96;
+    font-size: 18px;
+    padding-left: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.left-wrapper ul li:hover
+{
+    color: #adb5bd;
+}
+
+.left-wrapper li i
+{
+    line-height: 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+
+
+.left-wrapper li i.ico:before
+{
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 18px!important;
+    background-size: 18px 18px;
+    background-position: center center;
+    box-sizing: border-box;
+}
+
+.left-wrapper li.teach:hover i.ico:before
+{
+    background-image: url("../img/ico/teacch-hover.png");
+}
+
+.left-wrapper li.teach i.ico:before
+{
+    background-image: url("../img/ico/teach-normal.png");
+}
+
+.left-wrapper li.ar i.ico:before
+{
+    background-image: url("../img/ico/ar-normal.png");
+}
+
+.left-wrapper li.ar:hover i.ico:before
+{
+    background-image: url("../img/ico/ar-hover.png");
+}
+
+.wrapper .main-wrapper
+{
+    background-color: rgb(240,242,245);
+    height: 100%;
+}
+
+.wrapper .main-wrapper .operation-box
+{
+    padding: 0 0 0 0;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.wrapper .main-wrapper .operation-box .back
+{
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #6c6c6c;
+}
+
+.wrapper .main-wrapper .operation-box .back:hover
+{
+    text-decoration: underline;
+}
+
+.wrapper .main-wrapper .operation-box .index
+{
+
+}
+
+.wrapper .main-wrapper .operation-box .operation
+{
+    padding: 10px 20px;
+}
+
+.wrapper .main-wrapper .operation-box div.hide
+{
+    display: none;
+}
+
+.wrapper .main-wrapper .operation-box div.show
+{
+    display: initial;
+}
+
+.wrapper .main-wrapper .operation-box .operation .add-sort .ico,
+.wrapper .main-wrapper .operation-box .operation .add-course .ico
+{
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/ico/add.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+}
+
+.wrapper .main-wrapper .operation-box .operation .add-sort,
+.wrapper .main-wrapper .operation-box .operation .add-course
+{
+    position: relative;
+    font-size: 14px;
+    padding: 7px 10px;
+    color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom,#3d74ff 0,#2da2ff 100%);
+}
+
+.wrapper .main-wrapper .operation-box .operation .add-sort .text,
+.wrapper .main-wrapper .operation-box .operation .add-course .text
+{
+    margin-left: 22px;
+}
+
+
+.wrapper .main-wrapper .operation-box .operation .add-course
+{
+    margin-left: 10px;
+}
+
+
+.wrapper .main-wrapper .operation-box .index  .breadcrumb
+{
+    margin: 0;
+    padding: 10px 0 10px 20px;
+}
+
+.wrapper .main-wrapper .table-box
+{
+    overflow: hidden;
+    padding: 20px;
+    height: 100%;
+}
+
+.wrapper .main-wrapper .table-box table
+{
+    border: 1px solid #d9d9d9;
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.table-box .product-zero .table
+{
+    margin-bottom: 0;
+}
+
+.add-data
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.add-product-box,
+.add-first-box,
+.add-second-box,
+.add-third-box,
+.add-course-box
+{
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    position: absolute;
+    display: inline-block;
+}
+
+div.add-course-box
+{
+    width: 1000px;
+}
+
+
+.add-data .top-title
+{
+    line-height: 50px;
+    padding: 0px 20px;
+    border-bottom: rgb(217,217,217) solid 1px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.add-data .top-title .close
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    color: black;
+    font-weight: 400;
+}
+
+.add-data .top-title .close:hover
+{
+    color: #0878ff;
+    font-weight: 400;
+}
+
+.add-data .center-content h3
+{
+    margin: 30px 20px 0;
+    font-size: 16px;
+}
+.add-data .center-content
+{
+    border-bottom: rgb(217,217,217) solid 1px;
+}
+
+.add-data .center-content input
+{
+    border: rgb(217,217,217) 1px solid;
+    margin-left: 20px;
+    height: 24px;
+    width: 520px;
+    margin-top: 13px;
+}
+
+.add-data .center-content input:last-child
+{
+    margin-bottom: 30px;
+}
+
+.add-data .center-content input:hover
+{
+    border:rgba(0, 0, 0, 0.4) 1px solid;
+}
+
+.add-data .center-content input:focus
+{
+    border: rgba(37, 78, 255, 0.89) 1px solid;
+}
+
+
+.add-data .bottom-confirm
+{
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    height: 62px;
+}
+
+.add-data .bottom-confirm .yes,
+.add-data .bottom-confirm .no
+{
+    width: 28px;
+    height: 32px;
+    font-size: 14px;
+    padding: 0 10px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.add-data .bottom-confirm .yes
+{
+    background-color: #1890ff;
+    color: #Fff;
+}
+
+.add-data .bottom-confirm .yes:hover
+{
+    background-color: #3d74ff;
+}
+
+.add-data .bottom-confirm .no
+{
+    background-color: #fff;
+    color: #000;
+    border: #d9d9d9 1px solid;
+}
+
+.add-data .bottom-confirm .no:hover
+{
+    color: #1890ff;
+    border-color: #1890ff;
+}
+
+.table-box tbody tr.sort td:first-child
+{
+    color: #3d74ff;
+}

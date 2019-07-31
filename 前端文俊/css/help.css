@@ -1,0 +1,398 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+button,select,input
+{
+    outline: none;
+    border: none;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+
+*
+{
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",
+    Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol"
+}
+
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.top-nav-wrapper
+{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-bottom: rgb(217,217,217) 1px solid;
+}
+
+.top-nav-wrapper .left-box
+{
+    position: relative;
+    left: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    width: calc(250px);
+}
+
+.top-nav-wrapper .right-box
+{
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+    right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-nav-wrapper .right-box .input-box
+{
+    height: 30px;
+    width: 200px;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.top-nav-wrapper .right-box .input-box:before
+{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto 0;
+    background-image: url("../img/ico/search.png");
+    background-size: cover;
+}
+
+.top-nav-wrapper .right-box .choose-box
+{
+    display: inline-block;
+}
+
+.top-nav-wrapper .right-box .choose-box a
+{
+    display: inline-block;
+    font-size: 14px;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    margin-left: 30px;
+
+}
+.top-nav-wrapper .right-box .choose-box a:hover
+{
+    font-weight: bold;
+}
+
+
+.top-nav-wrapper .right-box .input-box .search-input
+{
+    border-radius: 20px;
+    border: rgb(217,217,217) solid 1px;
+    height: 30px;
+    width: 200px;
+    line-height: 40px;
+    background-color: #fff;
+    color: #333;
+    padding-left: 35px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.top-nav-wrapper .right-box .input-box .search-input:hover
+{
+    border-color: rgb(153,153,153);
+}
+.top-nav-wrapper .right-box .input-box .search-input:focus
+{
+    border-color: rgb(8, 148, 98);
+    box-shadow: 0 0 0 2px rgba(76,175,80,.3);
+}
+.top-nav-wrapper .left-box img
+{
+    height: 25px;
+    vertical-align: bottom;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.top-nav-wrapper .left-box span
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 13px;
+    left: calc(93px + 30px);
+    width: 1px;
+    background-color: rgb(51, 51, 51);;
+}
+
+.top-nav-wrapper .left-box .help-link
+{
+    position: absolute;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: calc(93px + 60px);
+    color: rgb(51, 51, 51);
+}
+
+.top-nav-wrapper .left-box .help-link:hover
+{
+    font-weight: bold;
+}
+
+
+.left-wrapper
+{
+    float: left;
+    width: 300px;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: rgb(250,251,255);
+}
+
+
+.top-nav-wrapper .right-box .choose-box .register
+{
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 2px;
+    border: 0;
+    padding: 4px 10px;
+    height: 25px;
+    line-height: 16px;
+    background-color: rgb(1,142,89);
+    font-size: 16px;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+
+/*----------------滚动条---------------*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 0px;
+    background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgb(217,217,217);
+}
+
+
+/*--------------------折叠样式-------------------*/
+
+.content
+{
+    list-style: none;
+    width: 100%;
+    text-indent: 0;
+
+}
+
+.content ul
+{
+    padding-left: 20px;
+}
+
+
+
+.content li
+{
+    border-bottom: none;
+    /*line-height:35px;*/
+    /*height: 45px;*/
+    line-height: 45px;
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+.content li:first-child
+{
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
+}
+
+
+.content li:last-child
+{
+    /*border-bottom-left-radius: 10px;*/
+    /*border-bottom-right-radius: 10px;*/
+}
+
+
+/*.sub > li*/
+/*{*/
+/*    list-style: none;*/
+/*    background-color: #3889d4;*/
+/*    color: #FFFFFF;*/
+/*    border-bottom: #FFFFFF 1px solid;*/
+/*}*/
+
+/*.sub > li:hover*/
+/*{*/
+/*    background-color: #0069CE;*/
+/*}*/
+
+/*.sub*/
+/*{*/
+/*    display: none;*/
+/*}*/
+
+
+.content h3
+{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.sort > ul
+{
+    display: none;
+}
+
+.sort > h3
+{
+    position: relative;
+}
+
+.sort > h3:after
+{
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    right: 30px;
+    bottom: 0;
+    margin: auto 0;
+    top: 0;
+    transition: all 300ms;
+    border-left: grey solid 5px;
+    border-top: transparent solid 5px;
+    border-bottom: transparent solid 5px;
+    border-right: transparent solid 5px;
+}
+
+.sort.close > h3:after
+{
+    right: 30px;
+    transform: rotate(0deg);
+}
+
+.sort.open > h3:after
+{
+    right: 32px;
+    transform: rotate(90deg);
+}
+
+.main-wrapper
+{
+    float: right;
+    display: inline-block;
+    margin-top: 60px;
+    /*background-color: rgb(240,242,245);*/
+    height: calc(100% - 60px);
+    width: calc(100% - 300px);
+    box-sizing: border-box;
+    padding: 40px 100px;
+    overflow: auto;
+}
+.main-wrapper .question-wrapper h2,
+.main-wrapper .course-wrapper h2
+{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(96, 125, 139);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(238, 238, 238);
+    line-height: normal;
+    padding-bottom: 10px;
+
+}
+.main-wrapper .question-wrapper ul.hot-question li,
+.main-wrapper .course-wrapper ul.hot-course li
+{
+    display: inline-block;
+    width: calc((100% - 30px) /2);
+    height: 50px;
+    float: left;
+    border-bottom: rgb(229, 229, 229) solid 1px;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: "Helvetica Neue","Helvetica","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","WenQuanYi Micro Hei","Arial",sans-serif;
+
+}
+.main-wrapper .question-wrapper ul.hot-question li:nth-child(odd),
+.main-wrapper .course-wrapper ul.hot-course li:nth-child(odd)
+{
+    margin-right: 30px;
+}
+
+.main-wrapper .question-wrapper
+{
+    margin-top: 50px;
+}
+
+.clear:after
+{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.main-wrapper .question-wrapper ul.hot-question li:hover,
+.main-wrapper .course-wrapper ul.hot-course li:hover
+{
+    color: #2196f3;
+}

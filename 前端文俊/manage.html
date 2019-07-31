@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="css/md.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/sorena-Js.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/manage.css">
+    <script src="js/managerSetter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script src="js/md.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-nav">
+            <div class="name-box">
+                <h1>EOLINKER</h1>
+            </div>
+            <button class="login-out">退出登录</button>
+        </div>
+        <div class="left-wrapper">
+            <ul class="content">
+                <li class="nav-item teach">
+                    <i class="ico"></i>
+                    <span>教程管理</span>
+                </li>
+                <li class="nav-item ar">
+                    <i class="ico"></i>
+                    <span>问答管理</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-wrapper">
+            <div class="operation-box">
+                <div class="back">
+                    <span class="back-text">
+                        返回上级列表
+                    </span>
+                </div>
+                <div class="index">
+                    <ul class="breadcrumb">
+                        <li><a href="#">产品分类</a></li>
+                        <li><a href="#">一级分类</a></li>
+                        <li><a href="#">二级分类</a></li>
+                        <li class="active">三级分类</li>
+                    </ul>
+                </div>
+                <div class="operation">
+                    <button class="add-sort">
+                        <i class="ico"></i>
+                        <span class="text">新建产品分类</span>
+                    </button>
+                    <button class="add-course" style="display: none">
+                        <i class="ico"></i>
+                        <span class="text">新建教程</span>
+                    </button>
+                </div>
+            </div>
+            <div class="table-box">
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        let addButton = $('.add-sort').eq(0);
+        let courseButton = $('.add-course');
+        courseButton.click(function () {
+            showCourseAddBox(true);
+        });
+        $('.wrapper .main-wrapper .operation-box .back span').click(function () {
+            back();
+        });
+        indexSwitch(0);
+    </script>
+
+
+</body>
+</html>

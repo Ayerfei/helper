@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帮助中心</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/sorena-Js.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/indexDao.js"></script>
+    <script src="js/indexLoader.js"></script>
+
+</head>
+<body>
+
+    <div class="top-nav">
+        <div class="leftBox">
+            <div class="pic-box">
+                <img src="img/eolinker_sim.png" alt=""/>
+            </div>
+            <div class="textBox">
+                <span class="content line">|</span>
+                <span class="content font">帮助中心</span>
+            </div>
+        </div>
+        <div class="rightBox">
+            <a href="https://www.eolinker.com/">前往官网</a>
+            <a href="https://www.eolinker.com/#/login">登录</a>
+            <button class="register">免费注册</button>
+        </div>
+    </div>
+    <div class="help-box">
+        <div class="wrapper">
+            <div class="help-leftBox">
+                <p class="content font">您好，请问需要什么帮助?</p>
+                <div class="form-box">
+                    <form action="#" class="search-form">
+                        <select name="search">
+                            <option value="all">搜全站</option>
+                            <option value="API Studio">API Studio</option>
+                            <option value="API Gateway-EE">API Gateway-EE</option>
+                            <option value="API Gateway-CE">API Gateway-CE</option>
+                            <option value="API Beacon">API Beacon</option>
+                            <option value="Database Builder">Database Builder</option>
+                            <option value="Workspace">Workspace</option>
+                            <option value="Account">Account</option>
+                        </select>
+                        <input type="text" class="search-content-input" name="wd" placeholder="想知道些什么呢?">
+                        <button class="submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+            <div class="help-rightBox">
+                <div class="wrapper">
+                    <p>热门提问</p>
+                    <ul class="hot-question"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-box">
+        <h3 class="title">产品分类</h3>
+        <p class="tip">您可以根据使用的产品来检索教程</p>
+        <div class="wrapper">
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">API Studio</h3>
+                    <p class="detail">API研发管理&自动化测试</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">API Gateway-EE</h3>
+                    <p class="detail">API微服务网关,企业版</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">API Gateway-CE</h3>
+                    <p class="detail">API微服务网关-开源版</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">API Beacon</h3>
+                    <p class="detail">API监控</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">Database Builder</h3>
+                    <p class="detail">数据库结构管理</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">Workspace</h3>
+                    <p class="detail">工作空间</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="ico"></div>
+                <div class="content">
+                    <h3 class="title">Account</h3>
+                    <p class="detail">用户账户</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-message">
+        <div class="wrapper-box">
+            <div class="wrapper EOLINKER">
+                <div class="content">
+                    <h3>EOLINKER</h3>
+                    <p>
+                        <a href="https://www.eolinker.com/#/product/ams">API Studio | API 研发管理与自动化测试</a>
+                    </p>
+                    <p>
+                        <a href="https://www.eolinker.com/#/product/amt">API Beacon | API 监控</a>
+                    </p>
+                    <p>
+                        <a href="https://www.eolinker.com/#/product/agw">API Gateway | API 微服务网关</a>
+                    </p>
+                    <p>
+                        <a href="https://www.eolinker.com/#/product/dbm">Database Builder | 数据库研发管理</a>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper company">
+                <div class="content">
+                    <h3>公司</h3>
+                    <p>
+                        <a href="https://www.eolinker.com/#/about">关于我们</a>
+                    </p>
+                    <p>
+                        <a href="https://www.eolinker.com/#/register/protocol">服务条款</a>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper support">
+                <div class="content">
+                    <h3>支持</h3>
+                    <p>
+                        <a href="http://help.eolinker.com/">帮助中心</a>
+                    </p>
+                    <p>
+                        <a href="http://blog.eolinker.com/">Blog 博客</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/EoLinker-158912544733714/?modal=admin_todo_tour">Facebook 脸书</a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com/EoLinker">Twitter 推特</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/company/13627952/admin/updates/">Linkedin 领英</a>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper contact-us">
+                <div class="content">
+                    <h3>联系我们</h3>
+                    <p>市场合作：market@eolinker.com</p>
+                    <p>购买咨询：sales@eolinker.com</p>
+                    <p>运营中心：ops@eolinker.com</p>
+                    <p>中国大陆服务支持电话：400-616-0330 法定工作日（9:30-18:30）</p>
+                    <p>联系地址：广州市番禺区大学城明志街1号大学城信息枢纽楼3楼</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        createHotSearchDom(getHotSearchData());
+
+
+
+
+
+    </script>
+
+</body>
+</html>
